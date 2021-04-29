@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sass首页-2021-04-24</title>
+    <!-- css -->
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2450590_5l7a2c9w1ga.css">
+    <link rel="stylesheet" href="./styles/css/main.css" />
+</head>
+
+<body>
+    <!-- app-wrapper -->
+    <div class="app-wrapper">
+        <!-- 顶部导航 -->
+        <div class="nav">
+            <div class="nav-link">
+                <a href="//www.qidian.com">钓友圈</a>
+                <a href="//www.qdmm.com" target="_blank">问答圈</a><em>|</em>
+                <a href="//www.qdmm.com" target="_blank">天气</a><em>|</em>
+                <a href="http://chuangshi.qq.com" target="_blank">钓点</a><em>|</em>
+                <a class="nav-cur-act" href="javascript:void(false)">垂钓技巧</a>
+            </div>
+
+            <div class="nav-login-regist">
+                <a href="#" id="angler-login">登录</a>
+                <a href="#" id="angler-reg">注册</a>
+            </div>
+        </div>
+        <div class="nav-bottom-line"></div>
+
+        <!-- logo-搜索 -->
+        <div class="logo-search">
+            <div class="logo-img">
+                <h1 class="app-title">垂钓</h1>
+            </div>
+            <div class="search-wrapper">
+                <form action="#" id="formurl">
+                    <p class="search-input">
+                        <input type="text" name="userinput" id="userinput-area" />
+                    </p>
+                    <label for="submit-search">
+                        <input type="submit" value="+" style="display: none;" id="submit-search" />
+
+                        <i class="iconfont icon-icon-search"></i>
+                    </label>
+                </form>
+
+            </div>
+            <div class="to-wxapp">
+                <span class="me-text">扫一扫</span>
+                <i class="iconfont icon-erweima1"></i>
+            </div>
+
+        </div>
+
+        <!-- 技巧 -->
+        <div class="tip-wrapper">
+            <!-- 技巧导航 -->
+            <div class="tip-nav">
+                <h2 class="tip-text">垂钓技巧</h2>
+                <ul class="tip-nav-lists">
+                    <li class="tip-nav-link">全部帖子</li>
+                    <li class="tip-nav-link">精选</li>
+                    <li class="tip-nav-link">最新</li>
+                    <li class="tip-nav-link">排行</li>
+
+                </ul>
+            </div>
+
+            <!-- 技巧分类和轮播图 三栏布局-->
+            <div class="tip-main">
+
+
+                <!-- 中间轮播图 -->
+                <div class="run-img">
+                    <ul class="md-imglists">
+                        <li class="md-li">
+                            <a class="md-link" href="javascript:void(0)">
+                                <img class="md-img"
+                                    src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1383143627,2102723116&fm=26&gp=0.jpg"
+                                    alt="" />
+                            </a>
+                        </li>
+                        <li class="md-li">
+                            <a class="md-link" href="javascript:void(0)">
+                                <img class="md-img"
+                                    src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4163015909,4173738962&fm=11&gp=0.jpg"
+                                    alt="" />
+                            </a>
+                        </li>
+                        <li class="md-li">
+                            <a class="md-link" href="javascript:void(0)">
+                                <img class="md-img"
+                                    src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1886699456,1414981136&fm=26&gp=0.jpg"
+                                    alt="" />
+                            </a>
+                        </li>
+                        <li class="md-li">
+                            <a class="md-link" href="javascript:void(0)">
+                                <img class="md-img"
+                                    src="https://bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/054d74c22f9351bd6978cbaca25c7017.jpg"
+                                    alt="" />
+                            </a>
+                        </li>
+
+                        <div class="thumb-lists">
+                            <a class="thumb-item" href="javascript:void(0)">fadas111</a>
+                            <a class="thumb-item" href="javascript:void(0)">fadad22</a>
+                            <a class="thumb-item" href="javascript:void(0)">fadad33</a>
+                            <a class="thumb-item" href="javascript:void(0)">fadada444</a>
+
+
+                        </div>
+                    </ul>
+
+                </div>
+
+
+                <!-- 技巧分类 -->
+                <div class="tip-type">
+                    <ul class="tiptype-lists">
+                        <li class="tip-type-item">
+                            <i class="iconfont icon-Fishing"></i>
+                            <span class="tip-item-right">
+                                <i class="type-name">渔网</i>
+                                <b class="type-num">122</b>
+                            </span>
+                        </li>
+                        <li class="tip-type-item">
+                            <i class="iconfont icon--chuidiao"></i>
+                            <span class="tip-item-right">
+                                <i class="type-name">钓竿</i>
+                                <b class="type-num">1</b>
+                            </span>
+                        </li>
+                        <li class="tip-type-item">
+                            <i class="iconfont icon-diaoyu1"></i>
+                            <span class="tip-item-right">
+                                <i class="type-name">饵料</i>
+                                <b class="type-num">9</b>
+                            </span>
+                        </li>
+                        <li class="tip-type-item">
+                            <i class="iconfont icon-xintubiao_diaoyu"></i>
+                            <span class="tip-item-right">
+                                <i class="type-name">夜钓</i>
+                                <b class="type-num">12</b>
+                            </span>
+                        </li>
+                        <li class="tip-type-item">
+                            <i class="iconfont icon-xintubiao_diaoyu"></i>
+                            <span class="tip-item-right">
+                                <i class="type-name">冬钓</i>
+                                <b class="type-num">4</b>
+                            </span>
+                        </li>
+                        <li class="tip-type-item">
+                            <i class="iconfont icon-xintubiao_diaoyu"></i>
+                            <span class="tip-item-right">
+                                <i class="type-name">路亚钓</i>
+                                <b class="type-num">1</b>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- 热门资讯-->
+                <div class="new-topic">
+                    <h2>热门资讯</h2>
+                    <div class="scroll-vioce">
+                        <i class="iconfont icon-laba"></i>
+                        <p class="scroll-track">
+                            <span id="scroll-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                                optio corrupti architecto </span>
+                        </p>
+                    </div>
+                    <ul class="new-lists">
+                        <li class="new-item">
+                            <span>公司公1</span>
+                        </li>
+                        <li class="new-item">
+                            <span>公司公2</span>
+                        </li>
+                        <li class="new-item">
+                            <span>公司公3</span>
+                        </li>
+                        <li class="new-item">
+                            <span>公司公4</span>
+                        </li>
+                        <li class="new-item">
+                            <span>公司公5</span>
+                        </li>
+                        <li class="new-item">
+                            <span>公司公6</span>
+                        </li>
+                        <li class="new-item">
+                            <span>公司公7</span>
+                        </li>
+                        <li class="new-item">
+                            <span>公司公8</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 钓友圈 -->
+        <div class="talk-ques-wrapper">
+            <div class="talk-ques-cont">
+                <!-- 3d轮播钓友圈 -->
+                <div class="run-talk-lists">
+                    <h2 class="run-talk-header">钓友圈</h2>
+
+                    <ul id="round-data-lists" class="round-lists">
+                        <li class="round-move-item">
+                            <a href="#" target="_blank">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1026804106/90" class="round-img"
+                                    alt="钓友圈roundimg1" />
+                            </a>
+                        </li>
+                        <li class="round-move-item">
+                            <a href="#" target="_blank">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1027226716/90" class="round-img"
+                                    alt="钓友圈roundimg2" />
+                            </a>
+                        </li>
+                        <li class="round-move-item">
+                            <a href="#" target="_blank">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1026363869/90" class="round-img"
+                                    alt="钓友圈roundimg3" />
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="talk-ref-wrapper">
+                        <dl class="dl-lists">
+                            <dd class="dd-item">
+                                <h3>开局育妖</h3>
+                                <p class="dd-desc">1111开局育妖</p>
+                                <a href="#" class="to-dd-detail">查看</a>
+                            </dd>
+
+                            <dd class="dd-item">
+                                <h3>系统创越者</h3>
+                                <p class="dd-desc">222开系统创越者</p>
+                                <a href="#" class="to-dd-detail">查看</a>
+                            </dd>
+
+                            <dd class="dd-item">
+                                <h3>炼金术士</h3>
+                                <p class="dd-desc">3333炼金术士title</p>
+                                <a href="#" class="to-dd-detail">查看</a>
+                            </dd>
+
+                        </dl>
+                    </div>
+
+                </div>
+
+                <!-- 钓友圈热门 -->
+                <div class="talk-hot">
+                    <h2 class="hottalk-header">钓友圈热门</h2>
+                    <ul class="hot-talk-lists">
+                        <li class="talk-hitem">
+                            <div class="ht-img">
+                                <a href="#" class="talk-hitem-link">
+                                    <img class="htimg" src="https://bookcover.yuewen.com/qdbimg/349573/1026538804/90"
+                                        alt="钓友圈图片">
+                                </a>
+                            </div>
+                            <div class="ht-cont">
+                                <h3 class="ht-title">talkTitle000</h3>
+                                <p class="ht-desc">Lorem ipsum dolor sit.</p>
+                                <div class="ht-related">
+                                    <i class="iconfont icon-user"></i>
+                                    <span class="ht-from-user">jjcc</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="talk-hitem">
+                            <div class="ht-img">
+                                <a href="#" class="talk-hitem-link">
+                                    <!-- <img class="htimg" src="https://bookcover.yuewen.com/qdbimg/349573/1026538804/90" alt="钓友圈图片"> -->
+                                </a>
+                            </div>
+                            <div class="ht-cont">
+                                <h3 class="ht-title">talkTitle111</h3>
+                                <p class="ht-desc">Lorem ipsum dolor sit111.</p>
+                                <div class="ht-related">
+                                    <i class="iconfont icon-user"></i>
+                                    <span class="ht-from-user">jjcc</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="talk-hitem">
+                            <div class="ht-img">
+                                <a href="#" class="talk-hitem-link">
+                                    <img class="htimg" src="https://bookcover.yuewen.com/qdbimg/349573/1026538804/90"
+                                        alt="钓友圈图片">
+                                </a>
+                            </div>
+                            <div class="ht-cont">
+                                <h3 class="ht-title">talkTitle222</h3>
+                                <p class="ht-desc">Lorem ipsum dolor sit222.</p>
+                                <div class="ht-related">
+                                    <i class="iconfont icon-user"></i>
+                                    <span class="ht-from-user">jjcc</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="talk-hitem">
+                            <div class="ht-img">
+                                <a href="#" class="talk-hitem-link">
+                                    <img class="htimg" src="https://bookcover.yuewen.com/qdbimg/349573/1026538804/90"
+                                        alt="钓友圈图片">
+                                </a>
+                            </div>
+                            <div class="ht-cont">
+                                <h3 class="ht-title">talkTitle33</h3>
+                                <p class="ht-desc">Lorem ipsum dolor sit.333ddasdasdadadasdaddadadadad</p>
+                                <div class="ht-related">
+                                    <i class="iconfont icon-user"></i>
+                                    <span class="ht-from-user">jjcc</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 问答圈排行 -->
+                <div class="ques-sort">
+                    <h2 class="ques-header">问答圈排行</h2>
+                    <ul class="ques-lists">
+                        <li class="ques-item-li">
+                            <div class="ques-num-box">
+                                <span class="ques-sort-num">1</span>
+                            </div>
+                            <div class="ques-name-box">
+                                <a href="#" class="ques-title">quest1adasdas111</a>
+                                <i class="iconfont icon-up"></i>
+                            </div>
+                        </li>
+                        <li class="ques-item-li">
+                            <div class="ques-num-box">
+                                <span class="ques-sort-num">2</span>
+                            </div>
+                            <div class="ques-name-box">
+                                <a href="#" class="ques-title">quest1adasdas222</a>
+                                <i class="iconfont icon-up"></i>
+                            </div>
+                        </li>
+                        <li class="ques-item-li">
+                            <div class="ques-num-box">
+                                <span class="ques-sort-num">3</span>
+                            </div>
+                            <div class="ques-name-box">
+                                <a href="#" class="ques-title">quest1adasda33</a>
+                                <i class="iconfont icon-up"></i>
+                            </div>
+                        </li>
+                        <li class="ques-item-li">
+                            <div class="ques-num-box">
+                                <span class="ques-sort-num">4</span>
+                            </div>
+                            <div class="ques-name-box">
+                                <a href="#" class="ques-title">quest4444</a>
+                                <i class="iconfont icon-up"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 装备 -->
+        <div class="equip-wrapper">
+            <!-- 装备左边轮播 -->
+            <div class="equip-left-wrapper">
+                <h3 class="equip-title-header">垂钓装备</h3>
+
+                <div class="equip-main">
+                    <!-- 当前装备类型相关 -->
+                    <ul class="cur-equip-lists">
+                        <li class="cur-equip-item">
+                            <div class="left-img">
+                                <a href="" class="equip-img-link">
+                                    <img class="equip-img" src="https://bookcover.yuewen.com/qdbimg/349573/1026804106/90" alt="">
+                                </a>
+                            </div>
+                            <div class="equip-right-cont">
+                                <h4 class="equip-name">装备aaaa</h4>
+                                <p class="equip-desc">装备描述aaaa</p>
+                                <div class="equip-from">
+                                    <span class="equip-owner-name">jjcc</span>
+                                    <em class="equip-type-tag">饵料</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cur-equip-item">
+                            <div class="left-img">
+                                <a href="" class="equip-img-link">
+                                    <img class="equip-img" src="https://bookcover.yuewen.com/qdbimg/349573/1026804106/90" alt="">
+                                </a>
+                            </div>
+                            <div class="equip-right-cont">
+                                <h4 class="equip-name">装备bbb</h4>
+                                <p class="equip-desc">装备描述bdasdsadasdsadsadasdbbbbbbbbbbbbbbb</p>
+                                <div class="equip-from">
+                                    <span class="equip-owner-name">jjcc</span>
+                                    <em class="equip-type-tag">饵料</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cur-equip-item">
+                            <div class="left-img">
+                                <a href="" class="equip-img-link">
+                                    <img class="equip-img" src="https://bookcover.yuewen.com/qdbimg/349573/1026804106/90" alt="">
+                                </a>
+                            </div>
+                            <div class="equip-right-cont">
+                                <h4 class="equip-name">装备ccc</h4>
+                                <p class="equip-desc">装备描述ccc</p>
+                                <div class="equip-from">
+                                    <span class="equip-owner-name">jjcc</span>
+                                    <em class="equip-type-tag">饵料</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cur-equip-item">
+                            <div class="left-img">
+                                <a href="" class="equip-img-link">
+                                    <img class="equip-img" src="https://bookcover.yuewen.com/qdbimg/349573/1026804106/90" alt="">
+                                </a>
+                            </div>
+                            <div class="equip-right-cont">
+                                <h4 class="equip-name">装备dddd</h4>
+                                <p class="equip-desc">装备描述ddd</p>
+                                <div class="equip-from">
+                                    <span class="equip-owner-name">jjcc</span>
+                                    <em class="equip-type-tag">饵料</em>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- 轮播装备类型 -->
+                    <div class="equip-run-type">
+                        <ul class="equip-slide-lists">
+                            <li class="equip-slide-item">
+                                <a href="#" class="equip-type-link">
+                                    <img src="//bookcover.yuewen.com/qdbimg/349573/1023039066/90" title="从涂山开始的诸天之旅" alt="从涂山开始的诸天之旅" />
+                                </a>
+                            </li>
+                            <li class="equip-slide-item">
+                                <a href="#" class="equip-type-link">
+                                    <img src="https://bookcover.yuewen.com/qdbimg/349573/1026804106/90" title="开局育妖" alt="开局育妖" />
+                                </a>
+                              
+                            </li>
+                            <li class="equip-slide-item">
+                                <a href="#" class="equip-type-link">
+                                    <img src="https://bookcover.yuewen.com/qdbimg/349573/1026538804/90" title="ABCDE" alt="ABCDE" />
+                                </a>
+                              
+                            </li>
+                            <li class="equip-slide-item">
+                                <a href="#" class="equip-type-link">
+                                    <img src="https://bookcover.yuewen.com/qdbimg/349573/1026363869/90" title="炼金术师" alt="炼金术师" />
+                                </a>
+                               
+                            </li>
+                            <li class="equip-slide-item">
+                                <a href="#" class="equip-type-link">
+                                    <img src="https://bookcover.yuewen.com/qdbimg/349573/1027191407/90" title="我在" alt="我在" />
+                                </a>
+                              
+                            </li>
+
+                            <div class="equiptype-footer">
+                                <ul class="equip-type-tags">
+                                    <li class="equip-tag-item">饵料</li>
+                                    <li class="equip-tag-item">打窝</li>
+                                    <li class="equip-tag-item">路亚钓</li>
+                                    <li class="equip-tag-item">夜钓</li>
+                                    <li class="equip-tag-item">鱼塘</li>
+
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+              
+            </div>
+
+
+            <!-- 装备右边类型 -->
+            <div class="equip-right-wrapper">
+                <h3 class="equip-title-header">所有分类</h3>
+                <ul class="equip-type-lists">
+                    <li class="equip-type-item">
+                        <a class="equip-type-name" href="#">饵料</a>
+                        <i class="equip-type-num">12</i>
+                    </li>
+                    <li class="equip-type-item">
+                        <a class="equip-type-name" href="#">打窝技巧</a>
+                        <i class="equip-type-num">2</i>
+                    </li>
+                    <li class="equip-type-item">
+                        <a class="equip-type-name" href="#">路亚钓</a>
+                        <i class="equip-type-num">14</i>
+                    </li>
+                    <li class="equip-type-item">
+                        <a class="equip-type-name" href="#">鱼塘</a>
+                        <i class="equip-type-num">6</i>
+                    </li>
+                    <li class="equip-type-item">
+                        <a class="equip-type-name" href="#">鱼塘22</a>
+                        <i class="equip-type-num">7</i>
+                    </li>
+                    <li class="equip-type-item">
+                        <a class="equip-type-name" href="#">鱼塘333</a>
+                        <i class="equip-type-num">8</i>
+                    </li>
+                    <li class="equip-type-item">
+                        <a class="equip-type-name" href="#">鱼塘444</a>
+                        <i class="equip-type-num">9</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end app wrapper -->
+
+
+
+    <!-- javascript -->
+    <script src="./vendor/JQuery/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+
+</body>
+
+</html>

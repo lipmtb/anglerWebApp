@@ -1,0 +1,76 @@
+$bgurl:'https://qidian.gtimg.com/qd/images/logo.beebc.png'; //站点logo
+
+.logo-search {
+    @include clearfloat;
+
+    div.logo-img,
+    div.search-wrapper {
+        float: left;
+    }
+  /*左边站点logo*/
+    div.logo-img {
+        height     : 0;
+        width      : 12rem;
+        padding-top: 6rem;
+        background :url(#{$bgurl}) no-repeat center/contain;
+        overflow   : hidden;
+    }
+
+    /*搜索区域*/
+    div.search-wrapper {
+
+        margin-top : 2rem;
+        margin-left: 12rem;
+
+        @at-root {
+            #formurl {
+                display: flex;
+                width  : 14rem;
+                height : 2rem;
+              
+                p.search-input {
+                    flex-grow:2;
+                    //搜索输入文本框
+                    #userinput-area {
+                        width:100%;
+                        height : 100%;
+                        border : 1px solid #dbdbdb;
+                        outline: none;
+                        box-sizing: border-box;
+                        padding-left:0.5rem;
+                    }
+                }
+
+                label[for='submit-search'] {
+                    flex-grow:1;
+                    background-color: #008c8c;
+                    &:hover{
+                        background-color: lighten(#008c8c,10%);
+                    }
+                    i.iconfont {
+                        display    : block;
+                        height     : 100%;
+                        width      : 100%;
+                        line-height: 120%;
+                        font-size  : 1.6rem;
+                        text-align : center;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    /*扫码进入wxapp*/
+    div.to-wxapp {
+        float: right;
+        border:1px dotted #000;
+        padding:0.4rem 0.8rem;
+        margin-right:8rem;
+        margin-top:2rem;
+        i:hover{
+            cursor:pointer;
+        }
+    }
+}

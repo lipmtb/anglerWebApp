@@ -1,0 +1,36 @@
+/*重置样式*/
+@import "compass/reset";
+
+
+/*整体的媒体查询（适应移动端）*/
+@import "screen/mediascreen";
+
+
+/*整体的字体样式*/
+@import "mixins/globalfont";
+
+
+/*清除浮动*/
+@import "mixins/clearFloat";
+
+
+/* wrapper*/
+.app-wrapper{
+    padding-bottom:400px;
+    background-color: rgba(243, 232, 81, 0.404);
+    height:1200px;
+}
+
+/*nav顶部导航*/
+@import "components/topnav";
+
+/*logo搜索*/
+@import "components/logosearch";
+
+/*垂钓技巧*/
+@import "components/tip";
+
+/*钓友圈和问答圈*/
+@import "components/talkQues";
+
+@import "components/equip";

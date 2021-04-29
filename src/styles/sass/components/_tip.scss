@@ -1,0 +1,218 @@
+$tipnav-padding   :0.6rem; //垂钓技巧和导航的高度调整
+$tipnav-width-type:4rem;
+$three-aside-left :13rem; //轮播图左边技巧类型宽度
+
+$three-aside-right:12rem; //轮播图右边资讯宽度
+
+.tip-wrapper {
+
+    /*垂钓技巧导航*/
+    div.tip-nav {
+        color: #fff;
+        @include clearfloat;
+        background-color: #3e3d43;
+
+        @at-root {
+
+            h2.tip-text,
+            ul.tip-nav-lists {
+                float: left;
+            }
+
+            h2.tip-text {
+                margin-left     : 1.2rem;
+                background-color: #252428;
+                padding         : $tipnav-padding $tipnav-width-type;
+            }
+
+            ul.tip-nav-lists {
+
+                display           : flex;
+                // width          : 50rem;
+                justify-content   : space-around;
+
+                li.tip-nav-link {
+                    padding   : $tipnav-padding 2rem;
+                    box-sizing: border-box;
+
+                    &:hover {
+                        cursor          : pointer;
+                        background-color: #252428;
+                        color:red;
+                    }
+                }
+            }
+        }
+    }
+
+    /* 技巧类型和轮播图*/
+    .tip-main {
+        @include clearfloat;
+        padding-left : $three-aside-left;
+        padding-right: $three-aside-right;
+
+        /* 中间轮播图*/
+        div.run-img {
+            float           : left;
+           
+            width           : 100%;
+            margin-top      : 0.4rem;
+
+            ul.md-imglists {
+                position: relative;
+                margin  : 0.4rem;
+                height  : 18.4rem;
+                overflow: hidden;
+                @at-root {
+                    li.md-li {
+                        position  : absolute;
+                        width     : 100%;
+                        left      : 0;
+                        top       : 0;
+                        // transition: left 3s linear;
+
+                        a.md-link {
+                            display: block;
+                            height : 18.4rem;
+
+                            img.md-img {
+                                width : 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            div.thumb-lists {
+                position       : absolute;
+                display        : flex;
+                justify-content: space-between;
+                z-index        : 999;
+                bottom         : 0;
+                left           : 0;
+                padding-left   : 2rem;
+
+                a.thumb-item {
+                    background-color: #37291c;
+                    color           : #fff;
+                    text-decoration : none;
+                    padding         : 0.6rem 1rem;
+                    font-size       : 1.2rem;
+                    border-right    : 1px solid rgba(0, 0, 0, .4);
+                    opacity         : .6;
+                    margin-right    : 2rem;
+                }
+            }
+        }
+
+        /*技巧类型*/
+        @at-root {
+            .tip-type {
+                float           : left;
+                margin-left     : -100%;
+                background-color: #fcfcfa;
+                border          : 1px solid #e6e6e6;
+
+                li.tip-type-item {
+                    padding: 0.6rem 3.2rem;
+
+                    &:hover {
+                        cursor: pointer;
+                        color : red;
+
+                        i.iconfont {
+                            transform: translate(-0.4rem, 0);
+                        }
+                    }
+
+                    @include clearfloat;
+
+                    i.iconfont {
+                        float      : left;
+                        line-height: 1.8rem;
+                        transition : transform 0.4s;
+                    }
+
+                    span.tip-item-right {
+                        float      : right;
+                        margin-left: .4rem;
+                        text-align : center;
+
+                        i.type-name {
+                            display: block;
+                        }
+
+                        b.type-num {
+                            font-size: 0.6rem;
+                            color    : rgb(134, 131, 131);
+
+                        }
+                    }
+                }
+
+                li.tip-type-item:nth-child(odd) {
+                    background-color: #eee;
+                }
+            }
+        }
+
+
+
+        /*资讯*/
+        div.new-topic {
+            float           : right;
+            width           : 9rem;
+            margin-right    : -10rem;
+            margin-top      : 0.8rem;
+            background-color: hotpink;
+            padding         : 0.4rem;
+            text-align      : center;
+
+            h2 {
+                font-weight: bold;
+                font-size  : 1.4rem;
+            }
+
+            /*滚动新闻公告*/
+            @at-root {
+                div.scroll-vioce {
+                    @include clearfloat;
+                    margin-top: 0.7rem;
+
+                    i.iconfont,
+                    p {
+                        float: left;
+                    }
+
+                    i.iconfont {
+                        font-size : 0.8rem;
+                        margin-top: 0.2rem;
+                    }
+
+                    p.scroll-track {
+                        width      : 90%;
+                        white-space: nowrap;
+                        overflow   : hidden;
+
+                        span#scroll-text {
+                            display: block;
+
+                        }
+                    }
+                }
+            }
+
+            ul.new-lists {
+                text-align: left;
+
+                li.new-item {
+                    padding     : 0.4rem 0;
+                    padding-left: 0.4rem;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,201 @@
+/*装备*/
+
+// 标题样式
+@mixin equipheaderStyle {
+    h3.equip-title-header {
+        font-size     : 1.4rem;
+        font-weight   : bolder;
+        padding-bottom: 0.2rem;
+        border-bottom : 1px solid #000;
+    }
+}
+
+div.equip-wrapper {
+    @include clearfloat;
+    margin-top      : 1rem;
+    padding         : 0.4rem 4rem;
+    background-clip : content-box;
+    background-color: #51afaf57;
+
+    /* 装备左边轮播*/
+    div.equip-left-wrapper {
+        float           : left;
+        width           : 80%;
+        background-color: #f7f5f0;
+        @include equipheaderStyle; //h3垂钓装备
+
+        div.equip-main {
+            @include clearfloat;
+
+            @at-root {
+
+                /*当前的装备列表*/
+                ul.cur-equip-lists {
+                    display        : flex;
+                    flex-wrap      : wrap;
+                    justify-content: space-around;
+                    align-content  : space-between;
+                    width          : 50%;
+                    height         : 17rem;
+                    float          : left;
+
+                    padding-top: 0.4rem;
+
+                    li.cur-equip-item {
+                        width     : 46%;
+                        box-shadow: 1px 1px 5px #666;
+
+                        div.left-img {
+                            float: left;
+                        }
+
+                        div.equip-right-cont {
+                            position    : relative;
+                            height      : 8rem;
+                            overflow    : hidden;
+                            padding-left: 0.2rem;
+
+
+                            h4.equip-name {
+                                font-size  : 1.4rem;
+                                font-weight: bold;
+                                text-align : center;
+                                cursor     : pointer;
+
+                                &:hover {
+                                    color: red;
+                                }
+                            }
+
+                            p.equip-desc {
+                                margin-top: 0.4rem;
+                                height    : 2rem;
+                                overflow  : hidden;
+                                color     : #666;
+                                word-wrap : break-word;
+                                word-break: break-all;
+                            }
+
+                            div.equip-from {
+                                position : absolute;
+                                bottom   : 1rem;
+                                left     : 0.6rem;
+                                font-size: 0.8rem;
+                                color    : #ccc;
+
+                                @at-root {
+                                    em.equip-type-tag {
+                                        border : 1px solid red;
+                                        padding: 0.1rem 0.4rem;
+                                        color  : #f8a4a4;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+                /*轮播的装备类型*/
+                div.equip-run-type {
+                    width           : 48%;
+                    float           : right;
+                    background-color: #ffdddd;
+                }
+            }
+
+
+            @at-root {
+                div.equip-run-type {
+
+                    ul.equip-slide-lists {
+                        position  : relative;
+                        height    : 12rem;
+                        margin-top: 4rem;
+
+                        li.equip-slide-item {
+                            position  : absolute;
+                            width     : 6rem;
+                            left      : 0;
+                            right     : 0;
+                            margin    : auto;
+                            transition: all 2s;
+
+                        }
+
+                        div.equiptype-footer {
+                            position: absolute;
+                            width:72%;
+                            left  : 0;
+                            right : 0;
+                            bottom: 1rem;
+                            margin: auto;
+
+                            ul.equip-type-tags {
+                                display: flex;
+                                justify-content: space-around;
+                                li.equip-tag-item {
+                                    
+                                    padding:0.2rem 0.4rem;
+
+                                    transition: background-color 1s;
+                                    
+                                    border: 1px solid red;
+                                    cursor:pointer;
+                                    border-radius: 0.5rem;
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    /* 装备类型*/
+    div.equip-right-wrapper {
+        float: right;
+        width: 18%;
+
+        @include equipheaderStyle;
+
+        @at-root {
+            ul.equip-type-lists {
+                margin-top: 0.8rem;
+
+                li.equip-type-item {
+                    padding   : 0.6rem 0;
+                    border-top: 1px solid #999;
+
+                    &:first-child {
+                        border: 0;
+                    }
+
+                    a.equip-type-name {
+                        text-decoration: none;
+                        color          : black;
+                        padding        : 0.4rem 4rem 0.4rem 0;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+
+                    i.equip-type-num {
+                        color       : #a6a6a6;
+                        font-size   : 0.8rem;
+                        float       : right;
+                        margin-right: 0.8rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

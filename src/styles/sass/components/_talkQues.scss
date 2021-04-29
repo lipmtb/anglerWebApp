@@ -1,0 +1,221 @@
+$talk-left-wd       :52rem;
+$ques-sort-wd       :37rem;
+$header-bottom-color:rgb(145, 143, 143);
+
+
+@mixin headerstyle {
+    h2 {
+        font-size     : 1.4rem;
+        font-weight   : 800;
+        padding-bottom: 0.2rem;
+        border-bottom : 1px solid $header-bottom-color;
+    }
+}
+
+// 钓友圈和问答圈
+.talk-ques-cont {
+    width  : 94.3%;
+    margin : 0 auto;
+    display: flex;
+    height : 18rem;
+
+
+    /* 3d轮播钓友圈*/
+    div.run-talk-lists {
+        @include headerstyle;
+
+        width      : $talk-left-wd;
+        padding    : .4rem;
+        perspective: 2000px;
+
+        ul#round-data-lists {
+            margin-top     : 0.2rem;
+            height         : 10rem;
+            position       : relative;
+            transform-style: preserve-3d;
+
+            transform : rotateY(0deg);
+            transition: transform 2s;
+
+            li.round-move-item {
+                position  : absolute;
+                width     : 6rem;
+                left      : 8rem;
+                top       : 2rem;
+                transition: all 2s;
+            }
+        }
+
+        @at-root {
+            div.talk-ref-wrapper {
+
+                dl.dl-lists {
+                    margin-top: 1rem;
+                    dd.dd-item{
+                        text-align: center;
+                        height:6rem;
+                        overflow: hidden;
+                        h3{
+                            font-size:1.6rem;
+                            font-weight:800;
+                        }
+                        p.dd-desc{
+                            color:#a6a6a6;
+                            margin:0.4rem 0;
+                        }
+                        a.to-dd-detail{
+                            display: inline-block;
+                            text-decoration: none;
+                            color:#fff;
+                            padding:0.4rem 0.8rem;
+                            border-radius:10px;
+                            background-color: #f1522a;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    /* 热门钓友圈*/
+    div.talk-hot {
+        @include headerstyle;
+        flex-grow: 1;
+
+        padding: .4rem;
+
+        @at-root {
+            ul.hot-talk-lists {
+                display: flex;
+
+                flex-wrap: wrap;
+
+                li.talk-hitem {
+                    width         : 44%;
+                    margin-left   : .8rem;
+                    margin-top    : 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom : 1px solid;
+
+                    &:last-child {
+                        border: 0;
+                    }
+
+                    &:nth-last-child(2) {
+                        border: 0;
+                    }
+
+                    div.ht-img {
+                        float: left;
+
+                        a.talk-hitem-link {
+                            float   : left;
+                            height  : 6rem;
+                            overflow: hidden;
+                        }
+
+                        img.htimg {
+                            height    : 100%;
+                            transition: transform 1s;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+
+                    div.ht-cont {
+                        height  : 6rem;
+                        overflow: hidden;
+
+                        .ht-title {
+                            font-size    : 1.4rem;
+                            font-weight  : 600;
+                            text-align   : center;
+                            margin-bottom: 0.4rem;
+                            overflow     : hidden;
+                            white-space  : nowrap;
+                            word-break   : break-all;
+                            cursor       : pointer;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+
+                        p.ht-desc {
+                            color       : #666;
+                            max-height  : 2rem;
+                            overflow    : hidden;
+                            word-break  : break-all;
+                            padding-left: 0.4rem;
+                        }
+
+                        div.ht-related {
+                            padding-left: 0.4rem;
+                            margin-top  : 1rem;
+                            color       : #a6a6a6;
+                            font-size   : 0.8em;
+
+                            i.iconfont {
+                                font-size: 0.6em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*问答圈排行*/
+    @at-root {
+        div.ques-sort {
+            @include headerstyle;
+
+            width  : $ques-sort-wd;
+            padding: 0.4rem;
+
+            li.ques-item-li {
+                @include clearfloat;
+                margin: 0.4rem 0;
+
+                &:first-child {
+                    div.ques-num-box {
+
+                        background-color: #f1522a;
+                    }
+                }
+
+                div.ques-num-box {
+                    float           : left;
+                    padding         : 0.1rem 0.2rem;
+                    background-color: #ededed;
+                    margin-top      : 0.5rem;
+
+                }
+
+                div.ques-name-box {
+                    float        : left;
+                    width        : 10rem;
+                    padding      : 0.6rem 0;
+                    margin       : 0 0.4rem;
+                    border-bottom: 1px solid #e6e6e6;
+
+                    a.ques-title {
+                        text-decoration: none;
+                        color          : rgb(70, 52, 52);
+                    }
+
+                    i.iconfont {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

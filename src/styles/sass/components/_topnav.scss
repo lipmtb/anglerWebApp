@@ -1,0 +1,55 @@
+@mixin navbottomstyle($direc, $colorlists) {
+   
+    @if type-of($colorlists) !='list' {
+        @warn "类型错误，请输入list";
+    }
+
+    $len       :length($colorlists);
+    $percentnum:percentage(1 / $len);
+    $res       :compact();
+
+    @each $item in $colorlists {
+        
+        $temp: $item  ($percentnum * (index($colorlists, $item)-1)),$item  ($percentnum * index($colorlists, $item));
+     
+        $res : join($res, $temp,comma);//comma代表逗号 sapce表示空格
+        // @debug $res;
+    }
+
+    background: linear-gradient($direc, $res);
+}
+
+div.nav {
+    @include clearfloat;
+    padding         : 0.4rem 1rem;
+    background-color: #f7f7f7;
+
+    a {
+        text-decoration: none;
+        color          : #808080;
+        padding        : .4rem;
+        &:hover{
+            color:red;
+        }
+        &.nav-cur-act {
+            background-color: #fff;
+        }
+    }
+
+    @at-root {
+        div.nav-link {
+            float: left;
+
+        }
+
+        div.nav-login-regist {
+            float: right;
+        }
+    }
+
+}
+
+.nav-bottom-line {
+    height: 0.2rem;
+    @include navbottomstyle(to right, rgb(255, 166, 0)  rgb(60, 240, 60)  yellow purple #000);
+}
